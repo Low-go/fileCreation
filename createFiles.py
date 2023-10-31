@@ -39,10 +39,12 @@ def createFiles():
         for i in list:
             extend  = f"{i}.txt"
             file_path = os.path.join(destination, extend)
-            with open(file_path, 'w') as file:
+            with open(file_path, 'w', encoding='utf-8') as file:
                 file.write(message)
 
     #test
 
+
+createFiles()
 
 
