@@ -23,7 +23,8 @@ def createFiles():
 
     for i in range(quantity):
         name = input() #grab it
-        name = name.replace(" ", "_")# give them underscoress
+        name = name.replace(" ", "_").lower()# give them underscoress
+        
         list[i] = name
     
     message = input("please input the string you would like to write to the initial files:\n")
@@ -46,5 +47,6 @@ def createFiles():
 
 
 createFiles()
+
 
 
